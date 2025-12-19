@@ -1,0 +1,16 @@
+{
+  "name": "MyDigital Crown",
+  "short_name": "MDC",
+  "description": "Digital Marketing Company in Mumbai",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2D4BB5",
+  "theme_color": "#2D4BB5",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

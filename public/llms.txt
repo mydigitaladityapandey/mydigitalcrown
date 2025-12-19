@@ -1,0 +1,189 @@
+# MyDigital Crown - AI/LLM Information File
+# Website: https://mydigitalcrown.in
+# Last Updated: 2025-10-02
+
+# Company Information
+Company Name: MyDigital Crown
+Founded: 2017
+Founder & CEO: Aditya Pandey
+Industry: Digital Marketing Agency
+Location: Mumbai, Maharashtra, India
+Phone: +91-9819595495
+Email: info@mydigitalcrown.in
+
+# About Us
+MyDigital Crown is Mumbai's premier digital marketing agency founded by Aditya Pandey in 2017. 
+We have 8+ years of experience serving 150+ happy clients with an average growth rate of 300%.
+
+# Services Offered (60+ Services)
+
+## Main Services
+- Digital Marketing Strategy
+- Search Engine Optimisation (SEO)
+- Social Media Marketing
+- Web Development
+- Web Design
+- Mobile App Development
+- Google Ads (PPC)
+- Content Marketing
+- Digital Branding
+- YouTube Promotion
+- Artificial Intelligence
+- Machine Learning
+
+## SEO Sub-Services
+- Local Search Marketing
+- Analytics & Reporting
+- Mobile Search Optimization
+- Keyword Analysis
+- Link Building
+- Search Engine Marketing (SEM)
+- Organic Search Optimization
+- Online Reputation Management
+- Competitive Analysis
+- Search Strategy
+- Lead Generation
+- Local SEO Consultants
+- SEO Content Writing
+
+## Content & Social Media Services
+- Social Content Creation
+- Social Media Listening
+- Social Media Strategy
+- Social Media ROI
+- Web Content Writing
+- Content Writing
+- Email Marketing
+- Affiliate Marketing
+- Content Branding
+
+## Web Development Services
+- E-commerce Development
+- Backend Development
+- Front-End Development
+- CMS Development
+- Web Applications Development
+- E-commerce Strategy
+- Blog Development
+- UI Development
+- Custom Development
+
+## Framework Developer Services
+- PHP Developer
+- React Developer
+- Shopify Developer
+- WordPress Developer
+- Next.js Developer
+- Vue.js Developer
+- Angular Developer
+- Bootstrap Developer
+
+## Strategy & Design Services
+- Advertising Strategy
+- Display Ads
+- Google AdWords
+- Product Strategy
+- User Strategy
+- Monetization Strategy
+- Graphic Design
+- Interaction Design
+- E-commerce Design
+
+# Key Statistics
+- Years of Experience: 8+
+- Happy Clients: 150+
+- Average Growth: 300%
+- Services Offered: 60+
+- Client Satisfaction Rate: 98%
+- Support: 24/7
+
+# Website Structure
+Homepage: /
+About: /about
+Services: /services
+All Services: /services/[service-name]
+Contact: /contact
+Blog: /blog
+Jobs: /jobs
+Courses: /course
+Gallery: /gallery
+
+# Technology Stack
+Framework: Next.js 15 (React 19)
+Language: TypeScript
+Styling: Tailwind CSS
+Deployment: Vercel
+Repository: GitHub (mydigitalcrown/mydigital)
+
+# Core Values
+- Innovation: Staying ahead with latest trends and technologies
+- Integrity: Transparent and honest practices
+- Excellence: Exceptional quality and measurable results
+- Client-Centric: Treating client goals as our own
+
+# Mission
+Empower businesses with data-driven digital marketing strategies that drive measurable growth, maximize ROI, and create lasting digital success.
+
+# Vision
+To be India's most trusted digital marketing agency, known for innovation, transparency, and delivering exceptional results that transform businesses.
+
+# Target Audience
+- Startups looking for digital presence
+- Small to medium businesses seeking growth
+- Enterprises requiring digital transformation
+- E-commerce businesses needing online visibility
+- Local Mumbai businesses wanting local SEO
+- Companies requiring comprehensive digital marketing
+
+# Expertise Areas
+- Data-driven marketing strategies
+- SEO optimization and ranking
+- Google Ads campaign management
+- Social media marketing and management
+- Website and app development
+- Content creation and marketing
+- Brand building and digital presence
+- E-commerce solutions
+- Analytics and reporting
+
+# Service Locations
+Primary: Mumbai, Maharashtra, India
+Coverage: Pan-India digital marketing services
+Remote Services: Available worldwide
+
+# Contact Information
+Website: https://mydigitalcrown.in
+Phone: +91-9819595495
+Email: info@mydigitalcrown.in
+Address: Mumbai, Maharashtra, India
+
+# Founder Information
+Name: Aditya Pandey
+Role: Founder & CEO
+Expertise: Digital Marketing Expert with 8+ years experience
+Achievement: Helped 150+ businesses achieve 300% average growth
+Specialization: Data-driven marketing strategies, SEO, PPC, Social Media Marketing
+
+# Awards & Recognition
+- Client Satisfaction Rate: 98%
+- Successfully delivered 150+ projects
+- 300% average ROI for clients
+- 8+ years of consistent service excellence
+
+# Keywords for AI/LLM Context
+digital marketing agency mumbai, seo services mumbai, social media marketing, web development, google ads, ppc advertising, content marketing, digital branding, mydigital crown, aditya pandey, mumbai digital marketing, best digital marketing company, digital marketing consultant, online marketing services, internet marketing mumbai
+
+# File Format
+This file follows the llms.txt standard for providing structured information to Large Language Models (LLMs) and AI systems about the organization, services, and content.
+
+# Additional Notes
+- All service pages follow consistent structure with Navbar and Footer
+- SEO-optimized metadata on all pages
+- Responsive mobile-first design
+- Regular content updates and blog posts
+- Active social media presence
+- 24/7 customer support available
+- Custom solutions available based on client needs
+
+# Copyright
+© 2017-2025 MyDigital Crown. All rights reserved.

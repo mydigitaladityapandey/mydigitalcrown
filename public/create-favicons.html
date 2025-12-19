@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head><title>Generate Favicons</title></head>
+<body>
+<canvas id="canvas16" width="16" height="16"></canvas>
+<canvas id="canvas32" width="32" height="32"></canvas>
+<canvas id="canvas180" width="180" height="180"></canvas>
+<script>
+function drawIcon(canvas) {
+  const ctx = canvas.getContext('2d');
+  const size = canvas.width;
+  
+  // Gradient background
+  const gradient = ctx.createLinearGradient(0, 0, size, size);
+  gradient.addColorStop(0, '#2D4BB5');
+  gradient.addColorStop(1, '#1e3a8a');
+  ctx.fillStyle = gradient;
+  ctx.roundRect(0, 0, size, size, size * 0.2);
+  ctx.fill();
+  
+  // Lightning bolt
+  ctx.fillStyle = 'white';
+  ctx.strokeStyle = 'white';
+  ctx.lineWidth = size * 0.02;
+  ctx.beginPath();
+  ctx.moveTo(size * 0.5, size * 0.25);
+  ctx.lineTo(size * 0.35, size * 0.45);
+  ctx.lineTo(size * 0.45, size * 0.45);
+  ctx.lineTo(size * 0.45, size * 0.65);
+  ctx.lineTo(size * 0.55, size * 0.65);
+  ctx.lineTo(size * 0.55, size * 0.45);
+  ctx.lineTo(size * 0.65, size * 0.45);
+  ctx.closePath();
+  ctx.fill();
+  ctx.stroke();
+  
+  // Orange dot
+  ctx.fillStyle = '#FFA500';
+  ctx.beginPath();
+  ctx.arc(size * 0.5, size * 0.72, size * 0.03, 0, Math.PI * 2);
+  ctx.fill();
+}
+
+['16', '32', '180'].forEach(size => {
+  const canvas = document.getElementById('canvas' + size);
+  drawIcon(canvas);
+  console.log(size + 'px icon created');
+});
+</script>
+</body>
+</html>

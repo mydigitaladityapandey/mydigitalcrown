@@ -1,3 +1,27 @@
+# MyDigital Crown - Digital Marketing Company
+
+A modern, responsive website for MyDigital Crown, a leading digital marketing company in Mumbai. Built with Next.js, TypeScript, and Tailwind CSS featuring a beautiful blue color scheme.
+
+## 🚀 Features
+
+- **Multi-page Website** with App Router
+  - Home - Landing page with hero section and overview
+  - Services - Comprehensive list of digital marketing services
+  - About - Company information and achievements
+  - Contact - Contact form and business information
+
+- **Responsive Design** - Mobile-first approach, works on all devices
+- **Modern UI/UX** - Clean, professional design with blue color theme
+- **SEO Optimized** - Proper meta tags and semantic HTML
+- **Fast Performance** - Optimized with Next.js 15
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 15.5.4
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Package Manager:** npm
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

@@ -23,6 +23,18 @@
 # misc
 .DS_Store
 *.pem
+Thumbs.db
+
+# SEO audit reports (generated files)
+seo-audit-*.json
+*-report.json
+
+# temp and cache files
+*.tmp
+*.swp
+*.swo
+*~
+.cache/
 
 # debug
 npm-debug.log*

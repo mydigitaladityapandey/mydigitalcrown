@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="appleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D4BB5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="180" height="180" rx="40" fill="url(#appleGrad)"/>
+  
+  <!-- Lightning bolt -->
+  <path d="M 90 42 L 63 84 L 81 84 L 81 120 L 99 120 L 99 84 L 117 84 Z" 
+        fill="white" 
+        stroke="white" 
+        stroke-width="3"/>
+  
+  <!-- Accent dot -->
+  <circle cx="90" cy="133" r="6" fill="#FFA500"/>
+</svg>

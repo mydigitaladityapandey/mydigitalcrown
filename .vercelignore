@@ -1,0 +1,30 @@
+# Development files
+*.md
+*.js
+seo-audit-*
+analyze-issues.js
+service-*.js
+deploy.sh
+
+# Documentation
+README.md
+*.md
+SERVICE_PAGE_*.md
+QUICK_*.md
+SEO_*.md
+
+# Logs and cache
+*.log
+.DS_Store
+node_modules
+.next
+.vercel
+
+# IDE files
+.vscode
+.idea
+
+# Test files
+*.test.*
+*.spec.*
+__tests__

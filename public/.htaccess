@@ -1,0 +1,161 @@
+# .htaccess for MyDigital Crown
+# Redirect old HTML pages to new Next.js routes
+
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Force www or non-www (choose one)
+# To force www, uncomment these lines:
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# To force non-www, uncomment these lines:
+# RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+# RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# ===== MAIN PAGES =====
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^about\.html$ /about [R=301,L]
+RewriteRule ^contact\.html$ /contact [R=301,L]
+RewriteRule ^blog\.html$ /blog [R=301,L]
+RewriteRule ^gallery\.html$ /gallery [R=301,L]
+RewriteRule ^digital-marketing-course\.html$ /course [R=301,L]
+RewriteRule ^course\.html$ /course [R=301,L]
+RewriteRule ^jobs\.html$ /jobs [R=301,L]
+RewriteRule ^service\.html$ /services [R=301,L]
+RewriteRule ^services\.html$ /services [R=301,L]
+
+# ===== MAIN SERVICE PAGES =====
+RewriteRule ^digital-marketing-strategy\.html$ /services/digital-marketing-strategy [R=301,L]
+RewriteRule ^search-engine-optimisation\.html$ /services/search-engine-optimisation [R=301,L]
+RewriteRule ^seo\.html$ /services/search-engine-optimisation [R=301,L]
+RewriteRule ^social-media-marketing\.html$ /services/social-media-marketing [R=301,L]
+RewriteRule ^web-development\.html$ /services/web-development [R=301,L]
+RewriteRule ^web-design\.html$ /services/web-design [R=301,L]
+RewriteRule ^mobile-app\.html$ /services/mobile-app [R=301,L]
+RewriteRule ^google-ads\.html$ /services/google-ads [R=301,L]
+RewriteRule ^content-marketing\.html$ /services/content-marketing [R=301,L]
+RewriteRule ^digital-branding\.html$ /services/digital-branding [R=301,L]
+RewriteRule ^youtube-promotion\.html$ /services/youtube-promotion [R=301,L]
+RewriteRule ^artificial-intelligence\.html$ /services/artificial-intelligence [R=301,L]
+RewriteRule ^machine-learning\.html$ /services/machine-learning [R=301,L]
+
+# ===== SEO SUB-SERVICES =====
+RewriteRule ^local-search\.html$ /services/local-search [R=301,L]
+RewriteRule ^analytics\.html$ /services/analytics [R=301,L]
+RewriteRule ^mobile-search\.html$ /services/mobile-search [R=301,L]
+RewriteRule ^keyword-analysis\.html$ /services/keyword-analysis [R=301,L]
+RewriteRule ^link-building\.html$ /services/link-building [R=301,L]
+RewriteRule ^search-engine-marketing\.html$ /services/search-engine-marketing [R=301,L]
+RewriteRule ^sem\.html$ /services/search-engine-marketing [R=301,L]
+RewriteRule ^organic-search\.html$ /services/organic-search [R=301,L]
+RewriteRule ^reputation-management\.html$ /services/reputation-management [R=301,L]
+RewriteRule ^competitive-analysis\.html$ /services/competitive-analysis [R=301,L]
+RewriteRule ^search-strategy\.html$ /services/search-strategy [R=301,L]
+RewriteRule ^lead-generation\.html$ /services/lead-generation [R=301,L]
+RewriteRule ^local-seo-consultants\.html$ /services/local-seo-consultants [R=301,L]
+RewriteRule ^seo-content\.html$ /services/seo-content [R=301,L]
+
+# ===== CONTENT & SOCIAL MEDIA SERVICES =====
+RewriteRule ^social-content\.html$ /services/social-content [R=301,L]
+RewriteRule ^social-listening\.html$ /services/social-listening [R=301,L]
+RewriteRule ^social-media-strategy\.html$ /services/social-media-strategy [R=301,L]
+RewriteRule ^social-roi\.html$ /services/social-roi [R=301,L]
+RewriteRule ^web-content\.html$ /services/web-content [R=301,L]
+RewriteRule ^content-writing\.html$ /services/content-writing [R=301,L]
+RewriteRule ^email-marketing\.html$ /services/email-marketing [R=301,L]
+RewriteRule ^affiliate-marketing\.html$ /services/affiliate-marketing [R=301,L]
+RewriteRule ^content-branding\.html$ /services/content-branding [R=301,L]
+
+# ===== WEB DEVELOPMENT SERVICES =====
+RewriteRule ^ecommerce-development\.html$ /services/ecommerce-development [R=301,L]
+RewriteRule ^backend-development\.html$ /services/backend-development [R=301,L]
+RewriteRule ^front-end-development\.html$ /services/front-end-development [R=301,L]
+RewriteRule ^frontend-development\.html$ /services/front-end-development [R=301,L]
+RewriteRule ^cms\.html$ /services/cms [R=301,L]
+RewriteRule ^web-applications-development\.html$ /services/web-applications-development [R=301,L]
+RewriteRule ^ecommerce-strategy\.html$ /services/ecommerce-strategy [R=301,L]
+RewriteRule ^blog-development\.html$ /services/blog-development [R=301,L]
+RewriteRule ^ui-development\.html$ /services/ui-development [R=301,L]
+RewriteRule ^custom-development\.html$ /services/custom-development [R=301,L]
+
+# ===== FRAMEWORK DEVELOPER SERVICES =====
+RewriteRule ^php-developer\.html$ /services/php-developer [R=301,L]
+RewriteRule ^react-developer\.html$ /services/react-developer [R=301,L]
+RewriteRule ^shopify-developer\.html$ /services/shopify-developer [R=301,L]
+RewriteRule ^wordpress-developer\.html$ /services/wordpress-developer [R=301,L]
+RewriteRule ^nextjs-developer\.html$ /services/nextjs-developer [R=301,L]
+RewriteRule ^vuejs-developer\.html$ /services/vuejs-developer [R=301,L]
+RewriteRule ^angularjs-developer\.html$ /services/angularjs-developer [R=301,L]
+RewriteRule ^angular-developer\.html$ /services/angularjs-developer [R=301,L]
+RewriteRule ^bootstrap-developer\.html$ /services/bootstrap-developer [R=301,L]
+
+# ===== STRATEGY & DESIGN SERVICES =====
+RewriteRule ^advertising-strategy\.html$ /services/advertising-strategy [R=301,L]
+RewriteRule ^display-ads\.html$ /services/display-ads [R=301,L]
+RewriteRule ^google-adwords\.html$ /services/google-adwords [R=301,L]
+RewriteRule ^adwords\.html$ /services/google-adwords [R=301,L]
+RewriteRule ^product-strategy\.html$ /services/product-strategy [R=301,L]
+RewriteRule ^user-strategy\.html$ /services/user-strategy [R=301,L]
+RewriteRule ^monetization-strategy\.html$ /services/monetization-strategy [R=301,L]
+RewriteRule ^graphic-design\.html$ /services/graphic-design [R=301,L]
+RewriteRule ^interaction-design\.html$ /services/interaction-design [R=301,L]
+RewriteRule ^ecommerce-design\.html$ /services/ecommerce-design [R=301,L]
+
+# Remove trailing slashes (optional)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [R=301,L]
+
+# Prevent access to sensitive files
+<FilesMatch "\.(env|json|config\.js|config\.ts)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Enable GZIP Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Browser Caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/pdf "access plus 1 month"
+    ExpiresByType text/x-javascript "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresDefault "access plus 2 days"
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Custom Error Pages
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# Disable Directory Browsing
+Options -Indexes
+
+# Protect .htaccess file
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
