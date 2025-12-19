@@ -8,12 +8,11 @@ const nextConfig: NextConfig = {
     webpackMemoryOptimizations: true,
   },
   
-  // Skip TypeScript and ESLint checks to reduce memory usage
+  turbopack: {},
+  
+  // Skip TypeScript checks to reduce memory usage
   typescript: {
     ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
   },
   
   // Memory optimization

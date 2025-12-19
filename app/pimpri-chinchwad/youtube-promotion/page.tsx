@@ -90,7 +90,7 @@ export const metadata = {
   },
   alternates: {
     canonical: "https://mydigitalcrown.in/pimpri-chinchwad/youtube-promotion",
-  }
+  },
   robots: {
     index: true,
     follow: true,
