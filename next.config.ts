@@ -3,8 +3,8 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // Build optimization for large number of pages
   experimental: {
-    memoryBasedWorkersCount: false,
-    workerThreads: false,
+    memoryBasedWorkersCount: true,
+    workerThreads: true,
     webpackMemoryOptimizations: true,
     turbopack: false,
   },
@@ -32,9 +32,8 @@ const nextConfig: NextConfig = {
         splitChunks: {
           chunks: 'all',
           minSize: 10000,
-          maxSize: 100000, // Smaller chunks
-          maxAsyncRequests: 3, // Reduce async requests
-          maxInitialRequests: 2, // Reduce initial requests
+          maxAsyncRequests: 5, // Allow more async requests
+          maxInitialRequests: 3, // Allow more initial requests
           cacheGroups: {
             default: {
               minChunks: 1,
