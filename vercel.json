@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build:vercel",
+  "buildCommand": "node --max-old-space-size=4096 ./node_modules/.bin/next build --webpack",
   "outputDirectory": ".next",
   "framework": "nextjs",
   "functions": {
