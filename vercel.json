@@ -1,5 +1,5 @@
 {
-  "buildCommand": "node --max-old-space-size=4096 ./node_modules/.bin/next build --webpack",
+  "buildCommand": "npm run build:full",
   "outputDirectory": ".next",
   "framework": "nextjs",
   "functions": {

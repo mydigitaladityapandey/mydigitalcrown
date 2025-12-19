@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
     memoryBasedWorkersCount: false,
     workerThreads: false,
     webpackMemoryOptimizations: true,
+    turbopack: false,
   },
   
   // Skip TypeScript checks to reduce memory usage
