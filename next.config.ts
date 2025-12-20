@@ -5,8 +5,6 @@ const nextConfig: NextConfig = {
   experimental: {
     memoryBasedWorkersCount: true,
     workerThreads: true,
-    webpackMemoryOptimizations: true,
-    turbopack: false,
   },
   
   // Skip TypeScript checks to reduce memory usage
@@ -23,63 +21,64 @@ const nextConfig: NextConfig = {
     return 'build-' + Date.now()
   },
   
-  // Reduce build memory usage
-  webpack: (config, { isServer, dev }) => {
-    if (!dev) {
-      // Aggressive memory optimization
-      config.optimization = {
-        ...config.optimization,
-        splitChunks: {
-          chunks: 'all',
-          minSize: 10000,
-          maxAsyncRequests: 5, // Allow more async requests
-          maxInitialRequests: 3, // Allow more initial requests
-          cacheGroups: {
-            default: {
-              minChunks: 1,
-              priority: -20,
-              reuseExistingChunk: true,
-            },
-            vendor: {
-              test: /[\\/]node_modules[\\/]/,
-              name: 'vendors',
-              priority: -10,
-              reuseExistingChunk: true,
-              chunks: 'all',
-            },
-          },
-        },
-        minimize: true,
-        // Reduce memory usage
-        removeAvailableModules: true,
-        removeEmptyChunks: true,
-        mergeDuplicateChunks: true,
-      };
-    }
-    
-    // Memory limits
-    config.stats = 'errors-only';
-    config.performance = {
-      hints: false,
-    };
-    
-    // Reduce concurrent modules
-    if (!isServer) {
-      config.resolve.fallback = {
-        ...config.resolve.fallback,
-        fs: false,
-        net: false,
-        tls: false,
-      };
-    }
-    
-    // Reduce memory usage during compilation
-    config.infrastructureLogging = {
-      level: 'error',
-    };
-    
-    return config;
-  },
+  // Reduce build memory usage - disabled to reduce memory usage
+  // webpack: (config, { isServer, dev }) => {
+  //   if (!dev) {
+  //     // Aggressive memory optimization
+  //     config.optimization = {
+  //       ...config.optimization,
+  //       splitChunks: {
+  //         chunks: 'all',
+  //         minSize: 5000,
+  //         maxSize: 500000, // Larger chunks
+  //         maxAsyncRequests: 5,
+  //         maxInitialRequests: 3,
+  //         cacheGroups: {
+  //           default: {
+  //             minChunks: 1,
+  //             priority: -20,
+  //             reuseExistingChunk: true,
+  //           },
+  //           vendor: {
+  //             test: /[\\/]node_modules[\\/]/,
+  //             name: 'vendors',
+  //             priority: -10,
+  //             reuseExistingChunk: true,
+  //             chunks: 'all',
+  //           },
+  //         },
+  //       },
+  //       minimize: true,
+  //       // Reduce memory usage
+  //       removeAvailableModules: true,
+  //       removeEmptyChunks: true,
+  //       mergeDuplicateChunks: true,
+  //     };
+  //   }
+  //   
+  //   // Memory limits
+  //   config.stats = 'errors-only';
+  //   config.performance = {
+  //     hints: false,
+  //   };
+  //   
+  //   // Reduce concurrent modules
+  //   if (!isServer) {
+  //     config.resolve.fallback = {
+  //       ...config.resolve.fallback,
+  //       fs: false,
+  //       net: false,
+  //       tls: false,
+  //     };
+  //   }
+  //   
+  //   // Reduce memory usage during compilation
+  //   config.infrastructureLogging = {
+  //     level: 'error',
+  //   };
+  //   
+  //   return config;
+  // },
   
   images: {
     remotePatterns: [
